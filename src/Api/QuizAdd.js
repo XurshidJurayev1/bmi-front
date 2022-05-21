@@ -1,1 +1,1 @@
-export const QuizAdd = 'http://localhost:3001/admin';
+export const QuizAdd = 'https://quiz-123.vercel.app/admin';
