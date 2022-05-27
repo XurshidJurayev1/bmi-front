@@ -1,72 +1,73 @@
 import React from 'react';
+import './SliderTop.scss';
 import AwesomeSlider from 'react-awesome-slider';
 import AwsSliderStyles from 'react-awesome-slider/dist/styles.css';
 import img from '../../../../assets/img/slider1.jpg';
-import './SliderTop.scss';
+import img1 from '../../../../assets/img/blog1.png';
+import img2 from '../../../../assets/img/blog2.jpg';
+import img3 from '../../../../assets/img/blog3.jpg';
+import img4 from '../../../../assets/img/blog4.jpg';
+import img5 from '../../../../assets/img/blog5.jpg';
+import img6 from '../../../../assets/img/blog6.jpg';
+
 
 const SilderTop = (props) => {
 
-  return (
-    <div className="slider">
-      <AwesomeSlider
-        cssModule={AwsSliderStyles}
-        bullets="false"
-        play={true}
-        cancelOnInteraction={false}
-        interval={6000}
-        style={{ height: '100vh' }}
-      >
-        <div
+  const map = [
+    {
+      img: img6, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    },
+    {
+      img: img1, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    },
+
+    {
+      img: img, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    }, {
+      img: img2, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    }, {
+      img: img3, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    }, {
+      img: img4, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    }, {
+      img: img5, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    }, {
+      img: img6, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+    },
+
+
+  ];
+
+  return (<div className="slider">
+    <AwesomeSlider
+      cssModule={AwsSliderStyles}
+      bullets="false"
+      play={true}
+      cancelOnInteraction={false}
+      interval={3000}
+      style={{ height: '100vh' }}
+    >
+      {map.map((item, idx) => {
+        return (<div
+          key={idx}
           className="slider__card"
           style={{
-            backgroundImage: `url(${img})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
+            backgroundImage: `url(${item.img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
           }}>
           <div className="slider__card__content">
             <h3>
-              Title
+              {item.title}
             </h3>
             <p>
-              Some representative placeholder content for the first slide.
+              {item.text}
             </p>
           </div>
-        </div>
-        <div
-          className="slider__card"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-          }}>
-          <div className="slider__card__content">
-            <h3>
-              Title
-            </h3>
-            <p>
-              Some representative placeholder content for the first slide.
-            </p>
-          </div>
-        </div>
-        <div
-          className="slider__card"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-          }}>
-          <div className="slider__card__content">
-            <h3>
-              Title
-            </h3>
-            <p>
-              Some representative placeholder content for the first slide.
-            </p>
-          </div>
-        </div>
-      </AwesomeSlider>
-    </div>
-  );
+        </div>);
+      })}
+
+
+    </AwesomeSlider>
+  </div>);
 };
 
 export default SilderTop;

@@ -210,7 +210,7 @@ export const updateCourse = (id, course) => async (dispatch) => {
 };
 
 export const viewOneCourse = (id) => async (dispatch) => {
-  const res = await api.get(`courses/get/${id}`);
+  const res = await api.get(` ${id}`);
   dispatch({
     type: 'VIEW_COURSE',
     payload: res.data,
