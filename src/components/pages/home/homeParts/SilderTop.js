@@ -15,24 +15,46 @@ const SilderTop = (props) => {
 
   const map = [
     {
-      img: img6, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img6,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.',
     },
     {
-      img: img1, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img1,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.',
     },
 
     {
-      img: img, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.\n' +
+        '\n',
     }, {
-      img: img2, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img2,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.\n' +
+        '\n',
     }, {
-      img: img3, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img3,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.\n' +
+        '\n',
     }, {
-      img: img4, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img4,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.\n' +
+        '\n',
     }, {
-      img: img5, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img5,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.\n' +
+        '\n',
     }, {
-      img: img6, title: 'Title', text: 'Some representative placeholder content for the first slide.',
+      img: img6,
+      title: 'WebLearn',
+      text: 'Biz nafaqat yurtimizdagi balki butun dunyoda eng rivojlangan sohalar bo\'yicha kurslarni taqdim etamiz va tanlash imkonini beramiz.\n' +
+        '\n',
     },
 
 

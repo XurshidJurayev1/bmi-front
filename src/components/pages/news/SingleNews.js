@@ -17,17 +17,17 @@ const SingleNews = (props) => {
   const item = props.item;
   return (
     <div className="single_news">
-      <h2>News</h2>
+      <h2>Yangiliklar</h2>
       <div className="container-fluid">
         <div className="single_news_img">
           <img src={`${ImageApi}${item.image_path}`} />
         </div>
         <h3>{item.title}</h3>
-        <a target="_blank" href={item.link} rel="noreferrer">source link</a>
+        <a target="_blank" href={item.link} rel="noreferrer">manba havolasi</a>
         <div className="create__markup" dangerouslySetInnerHTML={createMarkup(item)} />
 
 
-        <button className="btn btn-primary" onClick={() => navigate('/news')}>Back</button>
+        <button className="btn btn-primary" onClick={() => navigate('/news')}>orqaga</button>
 
       </div>
     </div>

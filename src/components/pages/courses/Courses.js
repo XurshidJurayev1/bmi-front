@@ -58,7 +58,7 @@ const Courses = (props) => {
         <div className="col-md-3 col-sm-6" key={idx}>
           <div className="blog__card">
             <div className="blog__card__price">
-              <p>Price: free</p>
+              <p>Narxi: bepul</p>
             </div>
             <div className="blog__img">
               <img src={`${ImageApi}${item.image_path}`} alt="png" />
@@ -67,8 +67,8 @@ const Courses = (props) => {
               <h3>{item.title}</h3>
               {/*<p>{item.text}</p>*/}
               <div className="more__btn__student">
-                <span className="blog__text__student">{item.joined.length} Students</span>
-                <button className="btn btn-success" onClick={() => clickedCourse(item)}>More</button>
+                <span className="blog__text__student">{item.joined.length} talabalar</span>
+                <button className="btn btn-success" onClick={() => clickedCourse(item)}>ko'proq</button>
               </div>
 
             </div>
@@ -104,7 +104,7 @@ const Courses = (props) => {
       <div className="container-fluid">
         <div className="courses__category">
           <div className="courses__category__item">
-            <p onClick={() => selectCateg('')}>all</p>
+            <p onClick={() => selectCateg('')}>hammasi</p>
           </div>
 
           {

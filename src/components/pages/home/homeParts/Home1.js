@@ -7,16 +7,16 @@ const Home1 = () => {
 
   const map = [
     {
-      title: 'Learn faster',
-      text: 'Short 5-minute lessons make it easier to pay attention and remember what you learned',
+      title: 'Tez o\'rganish',
+      text: '5 daqiqalik qisqa darslar diqqatni jamlashni va o\'rganganlaringizni eslab qolishni osonlashtiradi',
     },
     {
-      title: 'Stay motivated',
-      text: 'Animated videos bring concepts to life with examples and a touch of humor',
+      title: 'Motivatsiyada qoling',
+      text: 'Animatsiyalangan videolar tushunchalarni misollar va hazil bilan jonlantiradi',
     },
     {
-      title: 'Study smarter',
-      text: 'Expert teachers help you focus on what\'s most important so you are confident and prepared',
+      title: 'Aqlliroq o\'qing',
+      text: 'Mutaxassis o\'qituvchilar sizga eng muhim narsaga e\'tiboringizni qaratishga yordam beradi, shunda siz o\'zingizga ishonch va tayyor bo\'lasiz',
     },
   ];
 
@@ -25,7 +25,7 @@ const Home1 = () => {
     <div className="home1">
       <div className="home1-container">
         <h3>
-          What makes our learning platform different
+          Bizning o'quv platformamiz nimasi bilan ajralib turadi
         </h3>
         <div className="home1-container-flex">
           <div className="home1-container-flex-img" style={{

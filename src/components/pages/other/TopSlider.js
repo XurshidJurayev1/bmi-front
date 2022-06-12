@@ -10,8 +10,8 @@ const TopSlider = () => {
         <div className="contact__bg__img__breadcrumb">
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
-              <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-              <li className="breadcrumb-item active" aria-current="page">Contact</li>
+              <li className="breadcrumb-item"><Link to="/">Asosiy sahifa</Link></li>
+              <li className="breadcrumb-item active" aria-current="page">Aloqa</li>
             </ol>
           </nav>
         </div>

@@ -44,10 +44,10 @@ const Contact = (props) => {
             </div>
             <div className="contact__container__label__card__text">
               <h3>
-                Address
+                Manzil
               </h3>
               <p>
-                1481 Creekside Lane Avila Beach, CA 931
+                Toshkent shahar Yakkasaroy tumani U.Nosirov ko'chasi 105
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Contact = (props) => {
             </div>
             <div className="contact__container__label__card__text">
               <h3>
-                Telephone number
+                Telefon raqami
               </h3>
               <a href="tel:+998935863877" target="_blank" rel="noreferrer">
                 +998935863877
@@ -74,7 +74,7 @@ const Contact = (props) => {
             </div>
             <div className="contact__container__label__card__text">
               <h3>
-                Email
+                Elektron pochta manzili
               </h3>
               <a href="mailto:xjurayev99@gmail.com" target="_blank" rel="noreferrer">
                 xjurayev99@gmail.com
@@ -99,26 +99,26 @@ const Contact = (props) => {
             <form onSubmit={submit}>
               <div className="mb-3">
                 <div className="mb-3">
-                  <label htmlFor="exampleFormControlInput1" className="form-label">First Name</label>
+                  <label htmlFor="exampleFormControlInput1" className="form-label">Ismingiz</label>
                   <input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     type="text"
                     className="form-control"
                     id="exampleFormControlInput1"
-                    placeholder="John" />
+                    placeholder="Ismingiz" />
                 </div>
-                <label htmlFor="exampleFormControlInput1" className="form-label">Last Name</label>
+                <label htmlFor="exampleFormControlInput1" className="form-label">Familiyangiz</label>
                 <input
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                   type="text"
                   className="form-control"
                   id="exampleFormControlInput1"
-                  placeholder="McCandy" />
+                  placeholder="Familiyangiz" />
               </div>
               <div className="mb-3">
-                <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
+                <label htmlFor="exampleFormControlInput1" className="form-label">Email</label>
                 <input
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -128,7 +128,7 @@ const Contact = (props) => {
                   placeholder="name@example.com" />
               </div>
               <div className="mb-3">
-                <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
+                <label htmlFor="exampleFormControlTextarea1" className="form-label">Matnni kiriting</label>
                 <textarea
                   value={text}
                   onChange={(e) => setText(e.target.value)}
@@ -137,7 +137,7 @@ const Contact = (props) => {
                   rows="3" />
               </div>
               <div className="d-flex">
-                <button className="btn btn-primary" type="submit">Submit</button>
+                <button className="btn btn-primary" type="submit">Yuborish</button>
               </div>
             </form>
           </div>

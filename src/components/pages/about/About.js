@@ -8,16 +8,17 @@ const About = () => {
     <div className=" about1 ">
       <div className="about1__content">
         <h3>
-          Join Our Community Now!
+          Hoziroq bizning ham jamiyatimizga qo'shiling!
         </h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at
-          rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
+
+          Har joyda, istalgan vaqtda online darslarimizdan foydalaning. bizning darslarimizni asosiy vaqtingizga ta'sir
+          qilmagan holda o'rganishingiz mumkin.
         </p>
         <button
           className="btn btn-primary  "
           onClick={() => navigate('/register')}>
-          Register now
+          Hoziroq roʻyxatdan oʻtish
         </button>
 
       </div>

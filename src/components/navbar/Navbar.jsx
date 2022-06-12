@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.scss';
 import { Link, useNavigate, NavLink } from 'react-router-dom';
 import { AiOutlineCloseSquare, AiOutlineMenu } from 'react-icons/ai';
-
+import logo from '../../assets/img/logo.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -10,46 +10,48 @@ const Navbar = () => {
 
   const routes = [
     {
-      name: 'Home',
+      name: 'Asosiy',
       path: '/',
     },
     {
-      name: 'About',
+      name: 'Biz haqimizda',
       path: '/about',
     },
     {
-      name: 'Courses',
+      name: 'Kurslar',
       path: '/courses',
     },
     {
-      name: 'News',
+      name: 'Yangiliklar',
       path: '/news',
     },
     {
-      name: 'Contact',
+      name: 'Aloqa',
       path: '/contact',
     },
   ];
-
+  console.log(open);
 
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid ">
-          <Link to="/" className="navbar-brand">KGD</Link>
+          <Link to="/" className="navbar-brand">
+            <div className="logo_navbar" style={{ backgroundImage: `url(${logo})` }} />
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
+                  aria-label="Toggle navigation" onClick={() => setOpen(true)}>
             <AiOutlineMenu />
             {/*<span className="navbar-toggler-icon"></span>*/}
             {/*<i className="fa-solid fa-ellipsis-vertical"></i>*/}
           </button>
           <div className="collapse navbar-collapse nvb" id="navbarSupportedContent">
-            <button className="navbar-toggler nvb-clos e" type="button" data-bs-toggle="collapse"
+            <button className="navbar-toggler nvb-close" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     onClick={() => setOpen(!open)}
-                    style={{ position: 'absolute' }}
+                    style={{ position: 'absolute', right: '20px' }}
                     aria-label="Toggle navigation">
               <AiOutlineCloseSquare />
             </button>
@@ -72,6 +74,35 @@ const Navbar = () => {
             </div>
 
 
+          </div>
+          <div className="mobile_navbar"
+               style={open ? { display: 'flex' } : { display: 'none' }}
+          >
+            <button className="navbar-toggler nvb-close" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    onClick={() => setOpen(!open)}
+                    style={{ position: 'absolute' }}
+                    aria-label="Toggle navigation">
+              <AiOutlineCloseSquare />
+            </button>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              {
+                routes.map((item, idx) => {
+                  return (
+                    <li className="nav-item" key={idx}>
+                      <NavLink to={item.path} className="nav-link " activeClassName="nav-link active"
+                               aria-current="page" onClick={() => setOpen(false)}>{item.name}</NavLink>
+                    </li>
+                  );
+                })
+              }
+
+
+            </ul>
+            <div className="d-flex">
+              <button className="btn btn-primary" onClick={() => navigate('/login')}>Kirish</button>
+            </div>
           </div>
         </div>
       </nav>

@@ -44,7 +44,7 @@ const News = (props) => {
             <div className="blog__text">
               <h3>{item.title}</h3>
 
-              <button className="btn btn-success" onClick={() => navigateSingle(item)}>More</button>
+              <button className="btn btn-success" onClick={() => navigateSingle(item)}>Ko'proq</button>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ const News = (props) => {
   };
   return (
     <div className="news">
-      <h2>News</h2>
+      <h2>Yangiliklar</h2>
       <div className="container-fluid">
         <div className="row">
 
