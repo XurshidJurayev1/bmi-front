@@ -100,7 +100,7 @@ const Courses = (props) => {
 
   return (
     <div className="blog">
-      <h2>Courses</h2>
+      <h2>Kurslar</h2>
       <div className="container-fluid">
         <div className="courses__category">
           <div className="courses__category__item">

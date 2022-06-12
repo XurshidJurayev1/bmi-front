@@ -52,14 +52,15 @@ const Register = (props) => {
   return (
     <div className="d-flex justify-content-center form" style={{ minHeight: '100vh' }}>
       <div className="col-md-3 mt-5 form__main">
-        <Typography sx={{ mb: '1.5rem', textAlign: 'center' }} color="primary" variant="h2">Register</Typography>
+        <Typography sx={{ mb: '1.5rem', textAlign: 'center' }} color="primary" variant="h2">Ro'yhatdan
+          o'tish</Typography>
         <form className="row g-2 needs-validation" noValidate onSubmit={submit}>
           <div className="col-md-4">
             <TextField
               type="text"
-              label="First name"
+              label="Ismingiz"
               fullWidth
-              placeholder="First Name"
+              placeholder="Ismingiz"
               variant="outlined"
               value={user.first_name}
               onChange={(e) => setUser({ ...user, first_name: e.target.value })}
@@ -71,9 +72,9 @@ const Register = (props) => {
           <div className="col-md-4">
             <TextField
               type="text"
-              label="Last Name"
+              label="Familiyangiz"
               fullWidth
-              placeholder="Last Name"
+              placeholder="Familiyangiz"
               variant="outlined"
               value={user.last_name}
               onChange={(e) => setUser({ ...user, last_name: e.target.value })}
@@ -98,10 +99,10 @@ const Register = (props) => {
           </div>
           <div className="col-md-4">
             <TextField
-              type="text"
-              label="Password"
+              type="password"
+              label="Parol"
               fullWidth
-              placeholder="Password"
+              placeholder="Parol"
               variant="outlined"
               value={user.password}
               onChange={(e) => setUser({ ...user, password: e.target.value })}
@@ -112,10 +113,10 @@ const Register = (props) => {
           </div>
           <div className="col-md-4">
             <TextField
-              type="text"
-              label="Confirm password"
+              type="password"
+              label="Parolni tasdiqlash"
               fullWidth
-              placeholder="Confirm password"
+              placeholder="Parolni tasdiqlash"
               variant="outlined"
               value={password1}
               onChange={(e) => setPassword1(e.target.value)}
@@ -141,11 +142,11 @@ const Register = (props) => {
 
 
           <div className="col-4">
-            <button className="btn btn-primary" type="submit">Register</button>
-            <Link to="/login">login</Link>
+            <button className="btn btn-primary" type="submit">Ro'yhatdan o'tish</button>
+            <Link to="/login">Kirish</Link>
           </div>
           <div className="col-4">
-            <Link to="/">home</Link>
+            <Link to="/">Asosiy sahifa</Link>
           </div>
 
         </form>

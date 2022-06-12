@@ -23,7 +23,6 @@ const Login = (props) => {
   };
 
 
-
   useEffect(() => {
 
     if (props.role.length > 0 && props.selectedCourse.length > 0) {
@@ -57,7 +56,7 @@ const Login = (props) => {
   return (
     <div className="d-flex justify-content-center form">
       <div className="col-md-3 mt-5 form__main">
-        <Typography sx={{ mb: '1.5rem', textAlign: 'center' }} color="primary" variant="h2">Login</Typography>
+        <Typography sx={{ mb: '1.5rem', textAlign: 'center' }} color="primary" variant="h2">Kirish</Typography>
         <form className="row  needs-validation" noValidate onSubmit={submit}>
           <div className="col-md-4">
             {/*<label*/}
@@ -80,9 +79,9 @@ const Login = (props) => {
           </div>
           <div className="col-md-4">
             <TextField
-              label="Password"
+              label="Parol"
               fullWidth
-              placeholder="Password"
+              placeholder="Parol"
               variant="outlined"
               type="password"
               id="validationCustom02"
@@ -96,11 +95,11 @@ const Login = (props) => {
 
 
           <div className="col-4">
-            <button className="btn btn-primary" type="submit">Login</button>
-            <Link to="/register">register</Link>
+            <button className="btn btn-primary" type="submit">Kirish</button>
+            <Link to="/register">Ro'yhatdan o'tish</Link>
           </div>
           <div className="col-4">
-            <Link to="/">home</Link>
+            <Link to="/">Asosiy sahifa</Link>
           </div>
 
         </form>

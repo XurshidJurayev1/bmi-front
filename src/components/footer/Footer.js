@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.scss';
 import logo from '../../assets/img/logo.png';
+import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
   return (
@@ -25,21 +26,21 @@ const Footer = (props) => {
           <h3>
             Grafik dizayni
           </h3>
-          <a>Amaliy tadqiqotlar</a>
-          <a>Dasturiy ta'minot muhandisligi</a>
-          <a>Axborot muhandisligi</a>
-          <a>Tizim muhandisligi</a>
-          <a>Kompyuter muhandisligi</a>
+          <Link to="/courses">Amaliy tadqiqotlar</Link>
+          <Link to="/courses">Dasturiy ta'minot muhandislig</Link>
+          <Link to="/courses">Axborot muhandisligi</Link>
+          <Link to="/courses">Tizim muhandisligi</Link>
+          <Link to="/courses">Kompyuter muhandisligi</Link>
         </div>
         <div className="footer__container__card">
           <h3>
             Muhandislik
           </h3>
-          <a>Applied Studies</a>
-          <a>Software Engeneering</a>
-          <a>Informational Engeneering</a>
-          <a>System Engeneering</a>
-          <a>Computer Engeneering</a>
+          <Link to="/courses">Amaliy tadqiqotlar</Link>
+          <Link to="/courses">Dasturiy ta'minot muhandisligi</Link>
+          <Link to="/courses">Axborot muhandisligi</Link>
+          <Link to="/courses">Tizim muhandisligi</Link>
+          <Link to="/courses">Kompyuter muhandisligi</Link>
         </div>
 
       </div>
