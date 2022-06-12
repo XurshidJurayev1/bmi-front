@@ -10,14 +10,20 @@ const CompletedCourses = (props) => {
 
   console.log(filter);
   return (<Container>
-    <Typography variant="h5" className="mt-3 text-center">On Completed Courses</Typography>
+    <Typography variant="h5" className="mt-3 text-center">Tugallangan kurslar </Typography>
     <Box>
 
-      <Link to="/student/courses/completed"> <ListItem>sadasdasdas</ListItem></Link>
-      <ListItem>sadasdasdas</ListItem>
-      <ListItem>sadasdasdas</ListItem>
-      <ListItem>sadasdasdas</ListItem>
-      <ListItem>sadasdasdas</ListItem>
+      {/*<Link to="/student/courses/completed"> <ListItem>sadasdasdas</ListItem></Link>*/}
+
+      {
+        filter.map((item, idx) => {
+          return (
+            <div key={idx}>
+              <ListItem>{item.title}</ListItem>
+            </div>
+          );
+        })
+      }
     </Box>
   </Container>)
     ;
